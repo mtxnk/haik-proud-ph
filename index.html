@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haik, the Benevolent Sea God of the Tagalog World</title>
+    <meta name="description" content="A citizen-science monograph on Haik, the empathic ocean deity in Philippine mythology">
+    <meta name="author" content="Nik Metaxa-Schwarten">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #1a5490;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #2980b9;
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 5px solid #3498db;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .author {
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 30px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+            font-style: italic;
+            color: #34495e;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #ecf0f1;
+        }
+        
+        .abstract {
+            background: #e8f4f8;
+            padding: 30px;
+            border-radius: 5px;
+            margin: 30px 0;
+            border: 1px solid #3498db;
+        }
+        
+        .bibliography {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #2980b9;
+        }
+        
+        .bibliography ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .bibliography li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .bibliography li:before {
+            content: "📚";
+            position: absolute;
+            left: 0;
+        }
+        
+        .links {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        
+        .links h3 {
+            margin-top: 20px;
+            color: #2980b9;
+        }
+        
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px dotted #3498db;
+        }
+        
+        .links a:hover {
+            color: #2980b9;
+            border-bottom: 1px solid #2980b9;
+        }
+        
+        .links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .links li {
+            margin: 15px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .links li:before {
+            content: "🔗";
+            position: absolute;
+            left: 0;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 50px;
+            padding: 20px;
+            background: #fef9e7;
+            border-left: 4px solid #f39c12;
+        }
+        
+        .footnote {
+            font-size: 0.75em;
+            vertical-align: super;
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        .footnote:hover {
+            text-decoration: underline;
+        }
+        
+        .footnotes {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #34495e;
+        }
+        
+        .footnotes ol {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .footnotes li {
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <header>
+            <h1>Haik, the Benevolent Sea God of the Tagalog World</h1>
+            <p class="subtitle">A Citizen-Science Monograph on Empathic Ocean Deities in Philippine Mythology</p>
+            <p class="author"><strong>Author:</strong> Nik Metaxa‑Schwarten (Citizen Scientist)</p>
+        </header>
+
+        <hr>
+
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>This monograph examines <strong>Haik</strong>, a lesser‑known but culturally significant sea deity in Tagalog mythology, positioning him as a benevolent, protective counterpart to destructive or temperamental ocean gods in Philippine and global mythologies. Drawing on early colonial records, modern secondary literature, and comparative mythology, the paper argues that Haik represents an <em>empathic ocean archetype</em>: a guardian associated with calm seas, safe passage, and reciprocal human‑nature relationships. The study contrasts Haik with other Philippine sea deities and with Poseidon of Greek mythology, highlighting differing cosmologies of power, responsibility, and human‑ocean relations. The paper is written from a citizen‑science perspective to support contemporary ocean literacy and cultural preservation efforts.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>Across maritime cultures, the ocean is personified through deities that reflect how societies perceive and interact with the sea. In the Philippine archipelago, where coastal life has historically shaped livelihoods, spirituality, and identity, pre‑colonial belief systems included a diverse pantheon of nature‑based deities. Among these is <strong>Haik</strong>, a Tagalog sea god whose primary role was the protection of sea travelers from storms and danger.</p>
+            <p>Unlike many well‑known ocean gods who embody volatility, dominance, or punishment, Haik appears in historical sources as a stabilizing, benevolent force. This paper explores Haik's personality, role, and symbolism, arguing that he offers a valuable counter‑narrative to destructive ocean deities and provides a culturally rooted model for empathic ocean literacy.</p>
+        </section>
+
+        <section>
+            <h2>2. Sources and Methodology</h2>
+            <p>This study synthesizes:</p>
+            <ul>
+                <li>Early colonial ethnographic accounts (notably those summarized from the Boxer Codex tradition)</li>
+                <li>Secondary scholarly and encyclopedic sources on Tagalog deities</li>
+                <li>Contemporary interpretations used cautiously for comparative framing</li>
+            </ul>
+            <p>As a citizen‑science monograph, the approach prioritizes transparency, clear sourcing, and interpretive restraint. No claims are made beyond what sources reasonably support.</p>
+        </section>
+
+        <section>
+            <h2>3. Haik in Tagalog Mythology</h2>
+            
+            <h3>3.1 Primary Descriptions</h3>
+            <p>One of the clearest descriptions of Haik appears in early accounts of Tagalog religious practice, summarized in modern compilations of pre‑colonial belief systems:</p>
+            
+            <blockquote>
+                "They have another god they call <strong>Haik</strong>. They consider him the god of the sea, to whom they perform sacrifices, asking him to protect them from tempests and storms when traveling by sea, and to grant them good weather and favorable calm winds."<a href="#fn1" class="footnote" id="ref1">[1]</a>
+            </blockquote>
+            
+            <p>This description establishes several key attributes:</p>
+            <ul>
+                <li>Haik governs the sea itself, not merely fishing or storms</li>
+                <li>He is invoked <em>before</em> danger, not after catastrophe</li>
+                <li>His power is associated with prevention, calm, and safe passage</li>
+            </ul>
+            
+            <h3>3.2 Personality and Function</h3>
+            <p>From available sources, Haik can be characterized as:</p>
+            <ul>
+                <li><strong>Protective</strong>, not punitive</li>
+                <li><strong>Preventive</strong>, not reactive</li>
+                <li><strong>Relational</strong>, responding to offerings and respect</li>
+            </ul>
+            <p>This distinguishes Haik from deities who rule through fear or unpredictable violence. His worship reflects a worldview in which humans seek harmony with the sea rather than domination over it.</p>
+        </section>
+
+        <section>
+            <h2>4. Haik in Contrast to Other Philippine Sea Deities</h2>
+            <p>The Philippine archipelago has produced a rich pantheon of maritime deities, each reflecting regional worldviews and relationships with the ocean. Understanding Haik requires examining these comparative figures.</p>
+            
+            <h3>4.1 Amanikable (Tagalog)</h3>
+            <p><strong>The Temperamental Sea God</strong></p>
+            <p>Amanikable is the Tagalog god of the sea, known for his temperamental and vengeful nature. He is believed to cause storms and rough seas when angered, requiring appeasement through offerings and careful conduct.<a href="#fn2" class="footnote" id="ref2">[2]</a></p>
+            <p>In contrast, Haik:</p>
+            <ul>
+                <li>Is not associated with anger or vengeance</li>
+                <li>Is invoked for safety rather than appeasement</li>
+                <li>Represents trust and benevolence rather than fear</li>
+            </ul>
+            <p>This contrast suggests that different Tagalog communities developed distinct ocean theologies—some emphasizing the sea's dangerous unpredictability, others its nurturing protection.</p>
+            
+            <h3>4.2 Maguayan (Visayan)</h3>
+            <p><strong>Guardian of Souls and Sea Passage</strong></p>
+            <p>Maguayan is a Visayan deity associated with both the sea and the afterlife. He guides souls to their final destination, representing the ocean as a bridge between the world of the living and the realm of the dead.<a href="#fn3" class="footnote" id="ref3">[3]</a></p>
+            <p>While both deities govern sea passage, their domains differ:</p>
+            <ul>
+                <li><strong>Maguayan:</strong> Spiritual journey, death, transformation</li>
+                <li><strong>Haik:</strong> Physical safety, sustenance, daily maritime life</li>
+            </ul>
+            <p>This suggests complementary cosmological functions—one governing earthly voyages, the other eternal passage.</p>
+            
+            <h3>4.3 Bakunawa (Visayan)</h3>
+            <p><strong>The Serpent of Chaos and Power</strong></p>
+            <p>Bakunawa is a mythical sea serpent or dragon in Visayan mythology, believed to cause eclipses by swallowing the moon and to generate tidal waves. This creature symbolizes the mysterious and powerful aspects of the ocean—unpredictable, dangerous, and beyond human control.<a href="#fn4" class="footnote" id="ref4">[4]</a></p>
+            <p>Haik stands in stark opposition to Bakunawa's symbolism:</p>
+            <ul>
+                <li>Haik represents <em>order</em>, Bakunawa represents <em>chaos</em></li>
+                <li>Haik is <em>protective</em>, Bakunawa is <em>destructive</em></li>
+                <li>Haik is <em>relational</em>, Bakunawa is <em>adversarial</em></li>
+            </ul>
+            <p>This duality reflects a sophisticated understanding of the ocean's dual nature—both life-giver and threat.</p>
+            
+            <h3>4.4 Bulan (Bicolano)</h3>
+            <p><strong>The Moon God of Tides and Beauty</strong></p>
+            <p>Bulan is the Bicolano moon god, associated with the tides and the calming influence of the ocean. He represents beauty, tranquility, and the gentle rhythms of the sea's natural cycles.<a href="#fn5" class="footnote" id="ref5">[5]</a></p>
+            <p>Bulan and Haik share important qualities:</p>
+            <ul>
+                <li>Both embody <em>calm and nurturing</em> aspects of marine forces</li>
+                <li>Both represent <em>predictable, beneficial cycles</em></li>
+                <li>Both inspire trust rather than fear</li>
+            </ul>
+            <p>However, Bulan's connection to the moon links him to celestial influence over tides, while Haik's domain is more directly the sea itself. This suggests regional variations on a common theme of benevolent ocean spirituality.</p>
+            
+            <h3>4.5 Sidapa (Visayan)</h3>
+            <p><strong>God of Death and Tidal Cycles</strong></p>
+            <p>Sidapa is a Visayan god of death and tides, connected to the natural cycles of life and the ocean's rhythms. His association with death links him to transformation, endings, and the inexorable passage of time marked by tidal patterns.<a href="#fn6" class="footnote" id="ref6">[6]</a></p>
+            <p>Unlike Haik, Sidapa governs:</p>
+            <ul>
+                <li>The <em>finality</em> of life cycles, not their sustenance</li>
+                <li>The <em>inevitability</em> of natural law, not protective intervention</li>
+                <li>The <em>rhythmic power</em> of the ocean, not human navigation of it</li>
+            </ul>
+            <p>This distinction emphasizes Haik's unique role as an active guardian rather than a cosmic force beyond appeal.</p>
+            
+            <h3>4.6 Aman Sinaya (General Philippine)</h3>
+            <p>Aman Sinaya is frequently described as a guardian of fishermen and marine abundance. While closer in temperament to Haik, Aman Sinaya's domain is often narrower, focused on fishing success and sustenance.</p>
+            <p>Haik's scope is broader:</p>
+            <ul>
+                <li>Sea travel and navigation</li>
+                <li>Weather moderation</li>
+                <li>General maritime safety beyond fishing</li>
+            </ul>
+            <p>This suggests complementary roles rather than direct equivalence—Aman Sinaya for harvest, Haik for passage.</p>
+            
+            <h3>4.7 Synthesis: A Spectrum of Ocean Deities</h3>
+            <p>These six deities reveal a sophisticated maritime theology across Philippine cultures:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deity</th>
+                        <th>Primary Domain</th>
+                        <th>Emotional Character</th>
+                        <th>Human Relationship</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Haik</td>
+                        <td>Safe passage, calm seas</td>
+                        <td>Benevolent, protective</td>
+                        <td>Trust, reciprocity</td>
+                    </tr>
+                    <tr>
+                        <td>Amanikable</td>
+                        <td>Storms, ocean wrath</td>
+                        <td>Temperamental, vengeful</td>
+                        <td>Fear, appeasement</td>
+                    </tr>
+                    <tr>
+                        <td>Maguayan</td>
+                        <td>Afterlife, spiritual passage</td>
+                        <td>Solemn, guiding</td>
+                        <td>Transition, acceptance</td>
+                    </tr>
+                    <tr>
+                        <td>Bakunawa</td>
+                        <td>Chaos, natural disasters</td>
+                        <td>Destructive, mysterious</td>
+                        <td>Opposition, survival</td>
+                    </tr>
+                    <tr>
+                        <td>Bulan</td>
+                        <td>Tides, beauty, tranquility</td>
+                        <td>Calm, aesthetic</td>
+                        <td>Harmony, admiration</td>
+                    </tr>
+                    <tr>
+                        <td>Sidapa</td>
+                        <td>Death, tidal cycles</td>
+                        <td>Inevitable, cyclical</td>
+                        <td>Acceptance, natural law</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Haik emerges as uniquely positioned: benevolent like Bulan, practical like Aman Sinaya, yet comprehensive in scope. His function is <em>everyday protection</em>, making him essential to maritime communities' daily survival and prosperity.</p>
+        </section>
+
+        <section>
+            <h2>5. Comparative Perspective: Haik and Poseidon</h2>
+            <p>Poseidon, the Greek god of the sea, is among the most widely known ocean deities globally. He is powerful, authoritative, and notoriously temperamental. Storms, earthquakes, and shipwrecks are expressions of his displeasure.<a href="#fn7" class="footnote" id="ref7">[7]</a></p>
+            
+            <p><strong>Key contrasts:</strong></p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Haik</th>
+                        <th>Poseidon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Emotional tone</td>
+                        <td>Calm, benevolent</td>
+                        <td>Volatile, wrathful</td>
+                    </tr>
+                    <tr>
+                        <td>Human relationship</td>
+                        <td>Reciprocal, protective</td>
+                        <td>Hierarchical, punitive</td>
+                    </tr>
+                    <tr>
+                        <td>Ocean symbolism</td>
+                        <td>Pathway and provider</td>
+                        <td>Domain of power and dominance</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>While Poseidon embodies the uncontrollable might of nature, Haik reflects an archipelagic ethic of coexistence and mutual respect.</p>
+        </section>
+
+        <section>
+            <h2>6. Haik as an Empathic Ocean Archetype</h2>
+            <p>Haik's mythological profile aligns closely with contemporary concepts in ocean literacy and social‑emotional learning:</p>
+            <ul>
+                <li><strong>Empathy:</strong> The sea as a partner, not an adversary</li>
+                <li><strong>Responsibility:</strong> Safe passage depends on respect and restraint</li>
+                <li><strong>Reciprocity:</strong> Human behavior influences natural outcomes</li>
+            </ul>
+            <p>These elements make Haik particularly relevant for modern Philippine educational and conservation narratives.</p>
+        </section>
+
+        <section>
+            <h2>7. Implications for Ocean Literacy and Cultural Revival</h2>
+            <p>Re‑examining Haik is not merely an academic exercise. It supports:</p>
+            <ul>
+                <li>Cultural decolonization by foregrounding indigenous cosmologies</li>
+                <li>Ocean literacy grounded in emotional connection</li>
+                <li>Story‑based education aligned with Filipino values</li>
+            </ul>
+            <p>In this sense, Haik functions not only as a historical deity but as a symbolic guide for re‑imagining human‑ocean relationships today.</p>
+        </section>
+
+        <section>
+            <h2>8. Conclusion</h2>
+            <p>Haik represents a distinct and under‑recognized ocean deity whose defining characteristic is benevolence. In contrast to destructive or authoritarian sea gods, he embodies a relational, empathic model of marine stewardship rooted in Tagalog cosmology. As climate change and marine degradation intensify, revisiting such archetypes offers culturally grounded pathways toward more humane and sustainable ocean ethics.</p>
+        </section>
+
+        <hr>
+
+        <section class="bibliography">
+            <h2>Bibliography</h2>
+            <ul>
+                <li>Boxer Codex (late 16th century), descriptions of Tagalog religious practices (via secondary compilations)</li>
+                <li>The Pinay Writer. <em>The Tagalog Deities: Who Are They?</em></li>
+                <li>Wikipedia contributors. <em>List of Water Deities</em>.</li>
+                <li>FilipiKnow. <em>Philippine Mythology: Gods and Goddesses</em>.</li>
+                <li>Indigenous Philippine Folk Religions. Wikipedia.</li>
+                <li>EduBirdie Hub. <em>Traitors and Butchers of the Ocean</em> (used cautiously for comparative framing).</li>
+            </ul>
+        </section>
+        <section class="footnotes">
+            <h2 id="notes">Notes</h2>
+            <ol>
+                <li id="fn1">Description attributed to early colonial records of Tagalog religious practices, compiled in modern encyclopedic sources on Philippine mythology. See Jocano, F. Landa. <em>Outline of Philippine Mythology</em> (Manila: Centro Escolar University, 1969); and Scott, William Henry. <em>Barangay: Sixteenth-Century Philippine Culture and Society</em> (Quezon City: Ateneo de Manila University Press, 1994). <a href="#ref1">↩</a></li>
+                
+                <li id="fn2">Amanikable's characteristics as a temperamental sea deity appear in multiple Philippine mythological compilations, including the Boxer Codex tradition and modern retellings. Cf. Eugenio, Damiana L., ed. <em>Philippine Folk Literature: The Myths</em> (Quezon City: University of the Philippines Press, 2001). <a href="#ref2">↩</a></li>
+                
+                <li id="fn3">Maguayan's role as psychopomp and sea deity is documented in Visayan cosmology. See Jocano, F. Landa. <em>The Philippines at the Spanish Contact: Some Major Accounts of Early Filipino Society and Culture</em> (Manila: MCS Enterprises, 1975). <a href="#ref3">↩</a></li>
+                
+                <li id="fn4">The Bakunawa myth is widespread across Visayan and other Philippine regions, with variations in different sources. For comprehensive treatment, see Ramos, Maximo D. <em>Creatures of Philippine Lower Mythology</em> (Quezon City: University of the Philippines Press, 1971). <a href="#ref4">↩</a></li>
+                
+                <li id="fn5">Bulan's association with beauty, tides, and the moon is prominent in Bicolano mythology. See <em>Philippine Mythology</em> compiled by various folklorists and the work of Jordan Clark on Filipino mythology preservation. <a href="#ref5">↩</a></li>
+                
+                <li id="fn6">Sidapa's dual role as deity of death and tides appears in Visayan mythological accounts. See Eugenio (2001) and Jocano's comparative studies of regional Philippine deities. <a href="#ref6">↩</a></li>
+                
+                <li id="fn7">For classical sources on Poseidon, see Homer, <em>The Odyssey</em>; Hesiod, <em>Theogony</em>; and modern scholarly analysis in Burkert, Walter. <em>Greek Religion</em>, trans. John Raffan (Cambridge: Harvard University Press, 1985). <a href="#ref7">↩</a></li>
+            </ol>
+        </section>
+        <section class="links">
+            <h2>Bibliography & External Resources</h2>
+            
+            <h3>Academic & Research Sources</h3>
+            <ul>
+                <li>
+                    <a href="https://www.scribd.com/document/547781281/MAT-1AY-21-22-BFA-1-B-DULAY-Carl-Jarus-P-1" target="_blank">Philippine Mythical Creature: Amanikable | PDF | Paper | Sea</a>
+                    <br><em>Academic paper examining Amanikable and related sea deities in Philippine mythology</em>
+                </li>
+                <li>
+                    <a href="https://xing.fmi.uni-jena.de/mediawiki/index.php/Haik" target="_blank">Haik - All Skies Encyclopaedia</a>
+                    <br><em>Encyclopedia entry on Haik from University of Jena's mythology database</em>
+                </li>
+            </ul>
+            
+            <h3>General Resources</h3>
+            <ul>
+                <li>
+                    <a href="https://thepinaywriter.com/the-tagalog-deities-who-are-they/" target="_blank">The Tagalog Deities: Who Are They? - The Pinay Writer</a>
+                    <br><em>Comprehensive overview of Tagalog pantheon including Haik</em>
+                </li>
+                <li>
+                    <a href="https://www.esquiremag.ph/culture/lifestyle/star-exoplanet-filipino-a00304-20200102" target="_blank">This Exoplanet and Star Are Named After Two Filipino Sea Gods - Esquire Philippines</a>
+                    <br><em>Modern cultural recognition of Filipino sea deities in astronomy</em>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/PhilippineSTAR/posts/aman-sinaya-and-haik-protector-of-the-fishermen-god-of-the-seathe-winning-entry-/1584592171694458/" target="_blank">Aman Sinaya and Haik: Protector of the Fishermen, God of the Sea - Philippine Star</a>
+                    <br><em>News article on winning artwork depicting Haik and Aman Sinaya</em>
+                </li>
+            </ul>
+            
+            <h3>Media & Social Media</h3>
+            <ul>
+                <li>
+                    <a href="https://www.tiktok.com/@itskyoko3/video/7439215601102359815" target="_blank">TikTok - Philippine Mythology: Haik</a>
+                    <br><em>Short-form educational content on Haik</em>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/reel/2242946879433586" target="_blank">Facebook - Haik Sea God Visual Storytelling</a>
+                    <br><em>Visual representation and cultural storytelling</em>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="note">
+            <p><strong>Author's note:</strong> This monograph is written as a citizen‑science contribution to cultural preservation and ocean literacy. All interpretations remain grounded in cited sources, with speculative elements clearly identified as comparative or symbolic.</p>
+        </footer>
+    </article>
+</body>
+</html>
