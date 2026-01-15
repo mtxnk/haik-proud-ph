@@ -58,6 +58,25 @@ curl -s https://haik.proud.ph | head -20
 # ❌ WRONG: No localhost testing needed
 ```
 
+### Common Tasks:
+```bash
+# Add new deity comparison
+# 1. Add subsection in section 4 with <h3>4.X DeityName (Region)</h3>
+# 2. Add to synthesis table
+# 3. Add footnote citation
+# 4. Test footnote links work bidirectionally
+
+# Update bibliography
+# 1. Add new resource to appropriate category
+# 2. Include URL and descriptive text
+# 3. Maintain 🔗 emoji prefix for links
+
+# Git workflow
+git -C /var/www/haik-proud-ph add index.html
+git -C /var/www/haik-proud-ph commit -m "Add [deity name] comparison with footnotes"
+git -C /var/www/haik-proud-ph push origin main
+```
+
 ---
 
 ## 📁 File Structure
@@ -91,6 +110,33 @@ curl -s https://haik.proud.ph | head -20
 - **Mobile-First**: Responsive design for all devices
 - **Print-Optimized**: Clean CSS for academic printing
 - **Accessibility**: Proper heading hierarchy, alt text, semantic markup
+- **Footnote Styling**: Blue superscript links with hover underline, dedicated .footnotes section with return arrows
+
+### CSS Architecture:
+```css
+/* Academic Typography */
+body { font-family: Georgia, 'Times New Roman', serif; }
+
+/* Footnote Links */
+.footnote { 
+    font-size: 0.75em; 
+    vertical-align: super; 
+    color: #2980b9; 
+}
+
+/* Notes Section */
+.footnotes { 
+    margin-top: 50px; 
+    border-top: 2px solid #34495e; 
+}
+```
+
+### HTML Patterns:
+- Use `<section>` for major content divisions
+- Use `<blockquote>` for primary source quotations
+- Use `<table>` for comparative deity analysis
+- Use footnote pattern: `<a href="#fn1" class="footnote" id="ref1">[1]</a>`
+- Include bidirectional links: `<a href="#ref1">↩</a>` in notes
 
 ---
 
@@ -99,14 +145,36 @@ curl -s https://haik.proud.ph | head -20
 ### When Updating Content:
 - **Maintain academic tone** - formal, evidence-based writing
 - **Cite sources** - all claims must have bibliographic support
+- **Use footnotes** - Academic best practice for inline citations with superscript numbers
 - **Preserve structure** - keep existing section organization
 - **Add metadata** - update Open Graph tags if title/description changes
 - **Verify links** - check all external bibliography URLs work
+
+### Academic Citation Standards:
+- **Footnotes required** for all factual claims about deities, mythology, historical sources
+- **Format**: Inline superscript numbers [1], [2] linking to Notes section
+- **Notes section**: Full bibliographic citations with author, title, publisher, year
+- **Bidirectional links**: ↩ return arrows from notes back to text
+- **Primary sources**: Cite Jocano, Scott, Eugenio, Ramos for Philippine mythology
+- **Classical sources**: Homer, Hesiod, Burkert for comparative Greek mythology
+
+### Adding New Deities or Content:
+- Place in appropriate comparative section (4.1, 4.2, etc.)
+- Include descriptive subsection title (e.g., "The Temperamental Sea God")
+- Add to synthesis table for comprehensive overview
+- Provide footnote citation for source material
+- Maintain consistent formatting with existing entries
 
 ### Adding New Resources:
 - Place in appropriate category (Academic, General, Media)
 - Include descriptive explanation below each link
 - Maintain consistent formatting
+
+### Content Completeness Checks:
+- ✅ All Philippine sea deities mentioned have dedicated subsections
+- ✅ Each deity has: description, characteristics, comparison with Haik
+- ✅ Synthesis table includes all deities with consistent categories
+- ✅ Footnotes connect all factual claims to academic sources
 
 ---
 
